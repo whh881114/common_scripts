@@ -1,16 +1,39 @@
 # "#"是注释标示符
-# 每一行就是需要配置信息的linux主机，各列的意思是主机名/IP地址，ssh端口，用户名 密码，并且只能以一个空格分隔。
+# 每一行就是需要配置信息的linux主机，各列的意思是主机名/IP地址，ssh端口，用户名 密码，支持多个空格或TAB分隔。
 
+# 测试项1：每个主机分为三组，用于测试脚本具有过滤重复记录的功能。
+# 测试项2：各个格式不一样，用于验证空格或TAB分隔符。
+
+elk-node1.example.com 22 root           redhat
+elk-node1.example.com 22 root                       redhat
+elk-node1.example.com 22 root     redhat
 elk-node1.example.com 22 root redhat
-elk-node2.example.com 22 root redhat
+elk-node1.example.com 22 root       redhat
+
+
+# 测试项3：端口写错。
+elk-node2.example.com wrong_port root redhat
+
+elk-node2.example.com 22 root       redhat
+elk-node2.example.com 22 root                  redhat
+elk-node2.example.com 22 root           redhat
+elk-node2.example.com 22 root   redhat
+
+# 测试项4：密码写错，但是主机之前配置过了信任，这里不会报错。原因也很简单，过滤重复记录时，是匹配整个列。
+elk-node3.example.com 22 root wrong_password
+
+# 测试项5：主机名写错。
+fake_elk-node3.example.com 22 root           redhat
+
+
+elk-node3.example.com 22 root redhat
+elk-node3.example.com 22 root redhat
+elk-node3.example.com 22 root                           redhat
 elk-node3.example.com 22 root redhat
 elk-node3.example.com 22 root redhat
 elk-node3.example.com 22 root redhat
 elk-node3.example.com 22 root redhat
 elk-node3.example.com 22 root redhat
 elk-node3.example.com 22 root redhat
-elk-node3.example.com 22 root redhat
-elk-node3.example.com 22 root redhat
-elk-node3.example.com 22 root redhat
-elk-node3.example.com 22 root redhat
-elk-node3.example.com 22 root redhat
+elk-node3.example.com 22 root 			redhat
+elk-node3.example.com	    	 22   			 		root 			redhat
