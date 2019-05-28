@@ -7,6 +7,9 @@
 @Desc  : 使用pexpect模块完成ssh-copy-id操作，以达到创建ssh信任操作。
 """
 
+# 注意点：
+# 1. 强制性要求主机要有如下命令：dos2unix, nc
+
 import re
 import sys
 import pexpect
@@ -75,51 +78,36 @@ def main():
             logger.warn("%s，此行内容不符标准格式：主机名/IP地址 ssh端口 用户名 密码，支持多个空格或TAB分隔，但是只允许存在四列。" % i)
         else:
             (host, port, username, password) = i.split(' ')
-            logger.info("开始为%s配置ssh信任。" % host)
 
-            # 设置ps1值，因为建立信息时，不一定是root，所以配置ps1值为root和普通用户提示符。
-            ps1 = '#|$'
             try:
                 port = int(port)
-                cmd = 'ssh-copy-id -f -p %d %s@%s' % (port, username, host)
+                ssh_cmd = 'ssh-copy-id -f -p %d %s@%s' % (port, username, host)
             except:
                 logger.critical("主机记录异常%s %s %s %s，不能转换成正确的ssh-copy-id命令，跳过此主机记录。" % (host, port, username, password))
                 continue
 
-            child = pexpect.spawn(cmd)
-            index = child.expect([ps1, pexpect.EOF, pexpect.TIMEOUT, 'assword:', '(yes/no)?'])
+            fin_flag = 'you wanted were added.'
+            err_flag = 'Name or service not known'
+            child = pexpect.spawn(ssh_cmd)
+            index = child.expect([fin_flag, err_flag, 'assword:', '\(yes\/no\)\?'])
 
-            # 当主机名故意写错时，index == 0也是成功的，无法用child.before或child.after来匹配内容。所以先使用一个nc命令来测试端口或主机名对不对的情况。
-            cmd = "nc -zv %s %d" % (host, port)
-            retcode = subprocess.call(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-            if retcode == 0:
-                pass
-            else:
-                logger.critical("主机记录异常%s %d %s %s，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。" % (host, port, username, password))
-                continue
 
             if index == 0:
-                # 匹配到ps1，那说明已经配置过了信任。
-                child.sendline('exit')
+                # 匹配到fin_flag，那说明已经配置过了信任。
                 logger.info("主机记录正常%s %d %s %s，此主机已经配置过了信任，忽略此记录。" % (host, port, username, password))
 
             elif index == 1:
-                # 没有匹配除ps1，'assword:', '(yes/no)?'以外的匹配项。
-                logging.error("主机记录异常%s %d %s %s，建立信任时，没有匹配到所期望的匹配符。" % (host, port, username, password))
+                logger.critical("主机记录异常%s %d %s %s，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。" % (host, port, username, password))
 
             elif index == 2:
-                logging.error("主机记录异常%s %d %s %s，建立信任时，连接超时。" % (host, port, username, password))
-
-            elif index == 3:
                 child.sendline("%s" % password)
-                sub_index = child.expect(['assword:', ps1])
+                sub_index = child.expect(['assword:', fin_flag])
                 if sub_index == 0:
                     logger.error("主机记录异常%s %d %s %s，建立信任时，用户所对应的密码错误。" % (host, port, username, password))
                 elif sub_index == 1:
-                    child.sendline('exit')
                     logger.info("主机记录正常%s %d %s %s，此主机已成功配置信任。" % (host, port, username, password))
 
-            elif index == 4:
+            elif index == 3:
                 pexpect.spawn('yes')
 
                 # 第一个内容，如果匹配时，还有可能再出现一个'(yes/no)?'，这表示目标主机换过IP地址。所以这些还需一个index再做分支判断。
@@ -133,11 +121,10 @@ def main():
                     child.sendline("%s" % password)
 
                 # 此时再检查密码是否输入错误。
-                sub_index = child.expect(['assword:', ps1])
+                sub_index = child.expect(['assword:', fin_flag])
                 if sub_index == 0:
                     logger.error("主机记录异常%s %d %s %s，建立信任时，用户所对应的密码错误。" % (host, port, username, password))
                 elif sub_index == 1:
-                    child.sendline('exit')
                     logger.info("主机记录正常%s %d %s %s，此主机已成功配置信任。" % (host, port, username, password))
 
 
