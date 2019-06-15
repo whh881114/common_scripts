@@ -1,0 +1,329 @@
+[2019-05-28 01:26:55,741]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 01:26:55,742]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 01:26:55,747]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 01:26:55,748]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:26:55,815]:[INFO]:主机记录正常elk-node3.example.com 22 root wrong_password，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:26:55,816]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:26:55,984]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:26:55,984]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 01:26:56,154]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:26:56,155]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:26:56,155]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 01:26:56,155]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:26:56,340]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:29:00,013]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 01:29:00,014]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 01:29:00,020]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 01:29:00,020]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:29:00,087]:[INFO]:主机记录正常elk-node3.example.com 22 root wrong_password，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:29:00,087]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:29:00,256]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:29:00,256]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 01:29:00,426]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:29:00,426]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:29:00,427]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 01:29:00,427]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:29:00,617]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:30:06,558]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 01:30:06,559]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 01:30:06,598]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 01:30:06,598]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:30:09,441]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，用户所对应的密码错误。
+[2019-05-28 01:30:09,441]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:30:28,220]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 01:30:28,221]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 01:30:28,226]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 01:30:28,226]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:30:28,294]:[INFO]:主机记录正常elk-node3.example.com 22 root wrong_password，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:30:28,294]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:30:28,462]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:30:28,462]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 01:30:28,639]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:30:28,640]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:30:28,640]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 01:30:28,640]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:30:28,816]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:30:55,121]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 01:30:55,122]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 01:30:55,128]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 01:30:55,129]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:30:55,196]:[INFO]:主机记录正常elk-node3.example.com 22 root wrong_password，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:30:55,196]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:30:55,364]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:30:55,364]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 01:30:55,538]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:30:55,538]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:30:55,538]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 01:30:55,538]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:30:55,706]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:31:28,050]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 01:31:28,051]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 01:31:28,058]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 01:31:28,058]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:31:28,128]:[INFO]:主机记录正常elk-node3.example.com 22 root wrong_password，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:31:28,128]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:31:28,305]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:31:28,305]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 01:31:28,484]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:31:28,484]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:31:28,485]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 01:31:28,485]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:31:28,656]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:32:17,127]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 01:32:17,128]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 01:32:17,132]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 01:32:17,132]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:32:17,200]:[INFO]:主机记录正常elk-node3.example.com 22 root wrong_password，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:32:17,200]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 01:32:17,369]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:32:17,369]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 01:32:17,538]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 01:32:17,538]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:32:17,538]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 01:32:17,539]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 01:32:17,731]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:01:45,168]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:01:45,173]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:01:45,207]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:01:45,208]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:01:45,306]:[INFO]:主机记录正常elk-node3.example.com 22 root wrong_password，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:01:45,306]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:01:45,492]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:01:45,492]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:01:45,669]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:01:45,670]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:01:45,670]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 09:01:45,670]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:01:45,855]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:02:27,291]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:02:27,292]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:02:27,298]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:02:27,299]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:02:27,367]:[INFO]:主机记录正常elk-node3.example.com 22 root wrong_password，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:02:27,368]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:02:27,541]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:02:27,541]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:02:27,720]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:02:27,721]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:02:27,721]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 09:02:27,721]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:02:27,891]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:04:07,881]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:04:07,882]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:04:07,888]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:04:07,888]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:04:07,960]:[INFO]:主机记录正常elk-node3.example.com 22 root wrong_password，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:04:07,960]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:04:08,130]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:04:08,130]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:04:08,307]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:04:08,307]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:04:08,307]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 09:04:08,307]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:04:08,481]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:04:49,051]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:04:49,052]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:04:49,058]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:04:49,058]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:04:49,131]:[INFO]:主机记录正常elk-node3.example.com 22 root wrong_password，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:04:49,131]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:04:49,306]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:04:49,306]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:04:49,486]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:04:49,486]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:04:49,486]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 09:04:49,486]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:04:49,667]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:09:16,995]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:09:16,996]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:09:17,002]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:09:17,003]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:09:17,567]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:09:17,568]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:09:17,835]:[ERROR]:主机记录异常elk-node3.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:09:17,836]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:09:32,286]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:09:32,287]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:09:32,292]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:09:32,293]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:09:32,579]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:09:32,579]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:09:32,880]:[ERROR]:主机记录异常elk-node3.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:09:32,880]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:09:33,126]:[ERROR]:主机记录异常elk-node1.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:09:33,126]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:09:33,126]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 09:09:33,127]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:11:45,360]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:11:45,361]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:11:45,368]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:11:45,369]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:11:45,678]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:11:45,678]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:11:45,979]:[ERROR]:主机记录异常elk-node3.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:11:45,980]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:11:46,283]:[ERROR]:主机记录异常elk-node1.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:11:46,283]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:11:46,283]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 09:11:46,283]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:11:46,579]:[ERROR]:主机记录异常elk-node2.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:11:58,472]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:11:58,473]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:11:58,478]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:11:58,478]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:11:58,769]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:11:58,770]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:11:59,080]:[ERROR]:主机记录异常elk-node3.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:11:59,080]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:11:59,353]:[ERROR]:主机记录异常elk-node1.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:11:59,353]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:11:59,353]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 09:11:59,353]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:11:59,657]:[ERROR]:主机记录异常elk-node2.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:12:53,395]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:12:53,396]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:12:53,402]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:12:53,403]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:12:53,479]:[INFO]:主机记录正常elk-node3.example.com 22 root wrong_password，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:12:53,479]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:12:53,655]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:12:53,655]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:12:53,841]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:12:53,841]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:12:53,841]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 09:12:53,842]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:12:54,021]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:13:09,473]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:13:09,474]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:13:09,479]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:13:09,479]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:13:09,751]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:13:09,751]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:13:09,997]:[ERROR]:主机记录异常elk-node3.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:13:09,997]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:13:10,246]:[ERROR]:主机记录异常elk-node1.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:13:10,246]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:13:10,246]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 09:13:10,246]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:13:10,544]:[ERROR]:主机记录异常elk-node2.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:15:06,470]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:15:06,470]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:15:06,478]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:15:06,478]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:15:06,728]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:15:06,728]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:15:06,975]:[ERROR]:主机记录异常elk-node3.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:15:06,975]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:15:07,253]:[ERROR]:主机记录异常elk-node1.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:15:07,253]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:15:07,253]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 09:15:07,253]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:15:07,501]:[ERROR]:主机记录异常elk-node2.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:15:48,001]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:15:48,001]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:15:48,009]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:15:48,009]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:15:48,300]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:15:48,300]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:15:48,571]:[ERROR]:主机记录异常elk-node3.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:15:48,571]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:15:48,894]:[ERROR]:主机记录异常elk-node1.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:15:48,894]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:15:48,895]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 09:15:48,895]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:15:49,239]:[ERROR]:主机记录异常elk-node2.example.com 22 root redhat，建立信任时，没有匹配到所期望的匹配符。
+[2019-05-28 09:22:49,900]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:22:49,901]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:22:49,907]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:22:49,907]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:22:52,542]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，用户所对应的密码错误。
+[2019-05-28 09:22:52,543]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:25:12,132]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:25:12,133]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:25:12,138]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:25:12,140]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:25:14,297]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，用户所对应的密码错误。
+[2019-05-28 09:25:14,298]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:26:38,462]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:26:38,463]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:26:38,470]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:26:38,470]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:26:41,399]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，用户所对应的密码错误。
+[2019-05-28 09:26:41,400]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:30:55,761]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:30:55,762]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:30:55,770]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:30:55,770]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:30:57,982]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，用户所对应的密码错误。
+[2019-05-28 09:30:57,983]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:32:14,585]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:32:14,586]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:32:14,592]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:32:14,592]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:32:17,305]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，用户所对应的密码错误。
+[2019-05-28 09:32:17,306]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:33:12,870]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:33:12,871]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:33:12,876]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:33:12,876]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:33:15,370]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，用户所对应的密码错误。
+[2019-05-28 09:33:15,371]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:33:56,630]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:33:56,631]:[INFO]:开始为fake_elk-node3.example.com配置ssh信任。
+[2019-05-28 09:33:56,637]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 09:33:56,637]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:33:59,360]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，用户所对应的密码错误。
+[2019-05-28 09:33:59,360]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:35:52,502]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:35:52,503]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:43:36,751]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:43:36,752]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:45:12,033]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:45:12,034]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:46:41,006]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:46:41,006]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:46:41,059]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:46:41,059]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:46:41,187]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:46:41,188]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:46:41,326]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:46:58,908]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:46:58,908]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:46:58,943]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:46:58,944]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 09:46:59,075]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:46:59,076]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 09:46:59,234]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 09:47:48,761]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:47:48,762]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:59:25,698]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:59:25,699]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 09:59:57,234]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 09:59:57,235]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 10:03:51,181]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 10:03:51,181]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 10:04:41,512]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 10:04:41,512]:[INFO]:开始为elk-node3.example.com配置ssh信任。
+[2019-05-28 10:04:41,785]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已经配置过了信任，忽略此记录。
+[2019-05-28 10:04:41,786]:[INFO]:开始为elk-node1.example.com配置ssh信任。
+[2019-05-28 10:04:42,427]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已成功配置信任。
+[2019-05-28 10:04:42,428]:[INFO]:开始为elk-node2.example.com配置ssh信任。
+[2019-05-28 10:04:42,796]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已成功配置信任。
+[2019-05-28 10:14:09,832]:[INFO]:强制将configured_ssh_hosts.list文件换行格式转为linux格式成功。
+[2019-05-28 10:14:10,184]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已成功配置信任。
+[2019-05-28 10:14:10,539]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已成功配置信任。
+[2019-05-28 10:14:10,885]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已成功配置信任。
+[2019-05-28 10:14:36,224]:[INFO]:强制将configured_ssh_hosts.list.bak文件换行格式转为linux格式成功。
+[2019-05-28 10:14:36,262]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 10:14:38,304]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，用户所对应的密码错误。
+[2019-05-28 10:14:38,693]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已成功配置信任。
+[2019-05-28 10:14:39,079]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已成功配置信任。
+[2019-05-28 10:14:39,079]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 10:14:39,490]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已成功配置信任。
+[2019-05-28 10:15:35,440]:[INFO]:强制将configured_ssh_hosts.list.bak文件换行格式转为linux格式成功。
+[2019-05-28 10:15:35,484]:[CRITICAL]:主机记录异常fake_elk-node3.example.com 22 root redhat，测试主机所对应的端口不通，跳过此主机记录，请检查主机名或端口名。
+[2019-05-28 10:15:38,195]:[ERROR]:主机记录异常elk-node3.example.com 22 root wrong_password，建立信任时，用户所对应的密码错误。
+[2019-05-28 10:15:38,582]:[INFO]:主机记录正常elk-node3.example.com 22 root redhat，此主机已成功配置信任。
+[2019-05-28 10:15:39,189]:[INFO]:主机记录正常elk-node1.example.com 22 root redhat，此主机已成功配置信任。
+[2019-05-28 10:15:39,189]:[CRITICAL]:主机记录异常elk-node2.example.com wrong_port root redhat，不能转换成正确的ssh-copy-id命令，跳过此主机记录。
+[2019-05-28 10:15:39,798]:[INFO]:主机记录正常elk-node2.example.com 22 root redhat，此主机已成功配置信任。
