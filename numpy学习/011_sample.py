@@ -1,6 +1,9 @@
 # -*- coding: UTF-8 -*-
 
+from __future__ import print_function
 import numpy as np
+
+# python2在文件首行加上 from __future__ import print_function ，也可以使用python3中给end参数赋空(值)的方式实现输出不换行。
 
 """
 NumPy 迭代器对象 numpy.nditer 提供了一种灵活访问一个或者多个数组元素的方式。
@@ -16,21 +19,22 @@ print('\n')
 
 print('迭代输出元素：')
 for x in np.nditer(a):
-    print(x)
-    # python3 语法
-    # print(x, end=',')
+    print(x, end=',')
+print('\n')
 print('* ' * 50)
 
 
 # 控制遍历顺序。
 a = np.arange(6).reshape(2, 3)
 for x in np.nditer(a.T):
-    print(x)
+    print(x, end=',')
+print('\n')
 print('* ' * 50)
 
 for x in np.nditer(a.T.copy(order='C')):
-        print(x)
-print('- ' * 50)
+        print(x, end=',')
+print('\n')
+print('* ' * 50)
 """
 从上述例子可以看出，a 和 a.T 的遍历顺序是一样的，也就是他们在内存中的存储顺序也是一样的，但是 a.T.copy(order = 'C') 的遍历结
 果是不同的，那是因为它和前两种的存储方式是不一样的，默认是按行访问。
@@ -58,16 +62,18 @@ c = b.copy(order='C')
 print(c)
 print('- ' * 50)
 for x in np.nditer(c):
-    print(x)
-print('*' * 50)
+    print(x, end=',')
+print('\n')
+print('* ' * 50)
 
 print('以F风格顺序排序：')
 c = b.copy(order='F')
 print(c)
 print('- ' * 50)
 for x in np.nditer(c):
-    print(x)
-
+    print(x, end=',')
+print('\n')
+print('* ' * 50)
 
 
 # 可以通过显示设置，来强制nditer对象使用某种顺序。
@@ -78,11 +84,14 @@ print(a)
 print('\n')
 print('以C风格顺序排序：')
 for x in np.nditer(a, order='C'):
-    print(x)
-print('-*- ' * 20)
+    print(x, end=',')
+print('\n')
+print('* ' * 50)
 print('以F风格顺序排序：')
 for x in np.nditer(a, order='F'):
-    print(x)
+    print(x, end=',')
+print('\n')
+print('* ' * 50)
 
 
 # 修改数组中元素的值。
@@ -106,8 +115,9 @@ print(a)
 print('\n')
 
 for x in np.nditer(a, flags=['external_loop'], order='F'):
-    print(x)
+    print(x, end=',')
 print('\n')
+print('* ' * 50)
 
 # 广播迭代。
 # 如果两个数组是可广播的，nditer 组合对象能够同时迭代它们。 假设数组 a 的维度为 3X4，数组 b 的维度为 1X4 ，
@@ -125,4 +135,4 @@ print('\n')
 
 print('修改后的数组为：')
 for x, y in np.nditer([a, b]):
-    print("%d:%d" % (x, y))
+    print("%d:%d" % (x, y), end=',')
