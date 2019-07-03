@@ -1,0 +1,40 @@
+<project>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class='jenkins.scm.NullSCM'/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers class='vector'/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders/>
+  <publishers/>
+  <buildWrappers/>
+</project>
+
+上面是使用jenkins api创建一个空的job所用的xml配置文件。
+
+
+git版本控制，需要添加属性值，其版本信息和线上的可能不一样，需要自己查询出来。
+<scm class="hudson.plugins.git.GitSCM" plugin="git@3.10.0">
+    ....
+    ....
+    ....
+</scm>
+
+
+server.get_plugin_info('git') 可获得git的版本信息，所以scm可以自行添加。
+
+<builders>
+<hudson.tasks.Maven>
+  <targets>clean install -D maven.test</targets>
+  <mavenName>maven-3.0.5</mavenName>
+  <usePrivateRepository>false</usePrivateRepository>
+  <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+  <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+  <injectBuildVariables>false</injectBuildVariables>
+</hudson.tasks.Maven>
+<hudson.tasks.Shell>
+  <command>cp -f /usr/share/tomcat/.jenkins/workspace/java_template/target/ROOT.war /usr/share/tomcat/webapps/mybank-demo.war</command>
+</hudson.tasks.Shell>
+</builders>

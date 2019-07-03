@@ -1,0 +1,47 @@
+<project>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.10.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/whh881114/apache_index.git</url>
+        <credentialsId>216cbd35-f03e-4fa0-bde1-9bf604ea0da4</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Maven>
+      <targets>clean install -D maven.test</targets>
+      <mavenName>maven-3.0.5</mavenName>
+      <usePrivateRepository>false</usePrivateRepository>
+      <settings/>
+      <globalSettings/>
+      <injectBuildVariables>false</injectBuildVariables>
+    </hudson.tasks.Maven>
+    <hudson.tasks.Shell>
+      <command>cp -f /usr/share/tomcat/.jenkins/workspace/java_template/target/ROOT.war /usr/share/tomcat/webapps/mybank-demo.war</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
+
+
+
