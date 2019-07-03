@@ -1,0 +1,9 @@
+<data>
+<country name="Liechten">
+<rank updated="yes">1</rank>
+<year updated_by="Alex">2017</year>
+<gdppc>140000</gdppc>
+<neighbor direction="E" name="Austria" />
+<neighbor direction="W" name="Switzerland" />
+</country>
+</data>
