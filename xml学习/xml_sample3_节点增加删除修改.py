@@ -38,8 +38,8 @@ tree = ET.parse(origin_xml_file)
 root = tree.getroot()
 
 # 删除了原先的scm节点
-scm_node = root.findall("./scm")[0]
-root.remove(scm_node)
+scm_nodes = root.findall("./scm")
+root.remove(scm_nodes)
 tree.write(new_xml_file)
 
 # 现在要添加scm节点
@@ -63,17 +63,43 @@ tree.write(new_xml_file)
 # 先创建新的元素scm
 scm_elem = ET.Element('scm')
 root.append(scm_elem)
+scm_elem.set("class", "hudson.plugins.git.GitSCM")
+scm_elem.set("plugin", "git@3.10.0")
 
 # 然后再创建子元素
 scm_sub_elem1 = ET.SubElement(scm_elem, 'configVersion')
 scm_sub_elem1.text = '2'
 
 scm_sub_elem2 = ET.SubElement(scm_elem, 'userRemoteConfigs')
-scm_sub_elem3 = ET.SubElement(scm_sub_elem2, 'hudson.plugins.git.UserRemoteConfig')
-scm_sub_elem4 = ET.SubElement(scm_sub_elem3, 'url')
-scm_sub_elem4.text = 'https://github.com/whh881114/mybank-demo-maven.git'
-scm_sub_elem4 = ET.SubElement(scm_sub_elem3, 'credentialsId')
-scm_sub_elem4.text = '30b49806-fbec-4dea-99a9-aa3cff0b0492'
+scm_sub_elem2_1 = ET.SubElement(scm_sub_elem2, 'hudson.plugins.git.UserRemoteConfig')
+scm_sub_elem2_1_1 = ET.SubElement(scm_sub_elem2_1, 'url')
+scm_sub_elem2_1_1.text = 'https://github.com/whh881114/mybank-demo-maven.git新的'
+scm_sub_elem2_1_2 = ET.SubElement(scm_sub_elem2_1, 'credentialsId')
+scm_sub_elem2_1_2.text = '30b49806-fbec-4dea-99a9-aa3cff0b0492新的'
+
+scm_sub_elem3 = ET.SubElement(scm_elem, 'branches')
+scm_sub_elem3_1 = ET.SubElement(scm_sub_elem3, 'hudson.plugins.git.BranchSpec')
+scm_sub_elem3_1_1 = ET.SubElement(scm_sub_elem3_1, 'name')
+scm_sub_elem3_1_1.text = '*/master新的'
+
+
+
+# 删除了原先的scm节点
+builder_node = root.findall("./builders")
+root.remove(builder_node)
+builder_elem = ET.Element('builders')
+root.append(builder_elem)
+builder_elem2 = ET.SubElement(builder_node, 'hudson.tasks.Maven')
+
+
+"""
+      <targets>clean install -D maven.test</targets>
+      <mavenName>maven-3.0.5</mavenName>
+      <usePrivateRepository>false</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+      <injectBuildVariables>false</injectBuildVariables>
+"""
 
 
 write_xml(root, new_xml_file)
