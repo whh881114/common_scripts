@@ -9,9 +9,6 @@ root = tree.getroot()
 print('Tree root is %s.' % root.tag)
 
 
-# for child in root:
-#     print(child.tag)
-
 def count_accout(username):
     """
     凭据文件路径：/usr/share/tomcat/.jenkins/credentials.xml，下面就是账号的信息。
@@ -38,20 +35,8 @@ def count_accout(username):
         msg = "输入的用户凭证\"%s\"存在相同的记录，请登录jenkins后台修改凭证使其唯一。" % username
         return False, msg
 
-
-
 print('- ' * 50)
 username = 'test4'
 status, msg = count_accout(username)
 if status is False:
     print(msg)
-
-# print('- ' * 50)
-# ret = root.findall('./domainCredentialsMap/entry/java.util.concurrent.CopyOnWriteArrayList/')
-# for child in ret:
-#     print(child[0].text)
-#     print(child[1].text)
-#     print(child[2].text)
-#     print(child[3].text)
-#     print(child[4].text)
-#     print('* ' * 50)
