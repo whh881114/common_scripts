@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.tasks.Maven_-DescriptorImpl>
+  <installations>
+    <hudson.tasks.Maven_-MavenInstallation>
+      <name>maven-3.0.5</name>
+      <home>/usr/share/maven</home>
+      <properties/>
+    </hudson.tasks.Maven_-MavenInstallation>
+    <hudson.tasks.Maven_-MavenInstallation>
+      <name>apache-maven-3.5.4</name>
+      <home>/usr/local/apache-maven-3.5.4</home>
+      <properties/>
+    </hudson.tasks.Maven_-MavenInstallation>
+    <hudson.tasks.Maven_-MavenInstallation>
+      <name>apache-maven-3.6.0</name>
+      <home>/usr/local/apache-maven-3.6.0</home>
+      <properties/>
+    </hudson.tasks.Maven_-MavenInstallation>
+    <hudson.tasks.Maven_-MavenInstallation>
+      <name>apache-maven-3.6.1</name>
+      <home>/usr/local/apache-maven-3.6.1</home>
+      <properties/>
+    </hudson.tasks.Maven_-MavenInstallation>
+  </installations>
+</hudson.tasks.Maven_-DescriptorImpl>
