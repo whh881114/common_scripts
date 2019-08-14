@@ -3,13 +3,7 @@
   <component name="RemoteMappingsManager">
     <list>
       <list>
-        <remote-mappings server-id="python@sftp://root@foreman.example.com:22/usr/bin/python">
-          <settings>
-            <list>
-              <mapping local-root="$PROJECT_DIR$" remote-root="/root/python_scripts" />
-            </list>
-          </settings>
-        </remote-mappings>
+        <remote-mappings server-id="python@sftp://root@foreman.example.com:22/usr/bin/python" />
       </list>
     </list>
   </component>
