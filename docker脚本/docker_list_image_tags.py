@@ -6,14 +6,15 @@ Date: 2019/08/26
 Description: List the tags which you search a docker image.
 """
 from __future__ import print_function
+
 import json
 import argparse
 import requests
 from natsort import natsorted
 
-
 DOCKERHUB_URL = "https://registry.hub.docker.com/v1/repositories"
 TIMEOUT = 10
+
 
 def usage():
     global image
@@ -42,9 +43,11 @@ def list_image_tags(image):
             print('')
     print('\n')
 
+
 def main():
     usage()
     list_image_tags(image)
+
 
 if __name__ == '__main__':
     main()
